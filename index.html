@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--[if lt IE 9 ]>     <html lang="zh" class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9 ]>        <html lang="zh" class="no-js ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="zh" class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WSmile</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<!-- <link rel="stylesheet" type="text/css" href="css/default.css"> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery-2.1.1.min.js" ></script>
+  	<script type='text/javascript' src='js/jquery.particleground.min.js'></script>
+  	<script type='text/javascript' src='js/demo.js'></script>
+  	<script type="text/javascript" src='js/jquery.lettering.js'></script>
+  	<script type="text/javascript" src="js/jquery.textillate.js"></script>
+	<style>
+        body { margin: 0; padding: 0;}
+        section { padding: 0% 15%; margin: 0 auto;}
+        .section_head{
+        	height: 25%;
+        }
+        .section_body{
+        	height: 75%;
+        }
+        p{
+        	line-height: 1.3;
+        }
+    </style>
+    <script>
+    	$(document).ready(function(){
+    		// alert(window.screen.availHeight);
+  			var height = $(window).height()+"px";
+  			// $(".imageHolder").css("y",height);
+  			$('html,body').animate({scrollTop: '1px'}, 0);
+  			$('html,body').animate({scrollTop: '0px'}, 0);
+  			$("section").css("height",height);
+  	// 		$('.text1').textillate({
+			// 	initialDelay: 1000, 	//设置动画开始时间
+			// 	in: { effect: 'flipInX'	//设置动画名称
+			// 	}
+			// });
+			var starttime = new Date("2012/10/07");
+			setInterval(function () {
+			    var nowtime = new Date();
+			    var time = nowtime - starttime;
+			    var day = parseInt(time / 1000 / 60 / 60 / 24);
+			    var hour = parseInt(time / 1000 / 60 / 60 % 24);
+			    var minute = parseInt(time / 1000 / 60 % 60);
+			    var seconds = parseInt(time / 1000 % 60);
+			    $('.timespan').html(day + "days <br>" + hour + "h " + minute + "m " + seconds + "s");
+			}, 1000);
+  			
+		});
+    	// var height = $(window).height()+"px";
+    	// $("#haha").css("color",black);
+    	
+    </script>
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div id="particles" class="index" style="background:#A9EEE6;">
+
+  <div class="intro">
+
+    <h1 >WSmile</h1>
+
+    <p>The Website is dedicated to my love</p>
+
+  </div>
+
+</div>
+
+</div>
+    <!-- <section>
+    	<header class="htmleaf-header">
+			<h1>初识<span>First acquaintance</span></h1>
+			
+		</header>
+    </section> -->
+
+    <div class="img-holder" id="firstImg" data-image="img/1.jpg" data-cover-ratio="0.75" data-width="1064" data-height="1395">
+    	
+    </div>
+    
+    <section style="background:#FFB270;">
+    	<div class="section_head">
+    		<header class="htmleaf-header">
+				<h1>初识<span>First acquaintance</span></h1>	
+			</header>
+    	</div>
+    	<div class="section_body">
+    		<p>我奶说，</p>
+    		<p>我们6、7岁时就见过对方，</p>
+    		<p>但我们都不记得了。</p>
+    		<p>正式的相识是在放学回家的公交车上，</p>
+    		<p>后来我加了你的微信，</p>
+    		<p>我们竟然有那么多的共同话题，</p>
+    		<p>可以什么都不干一直聊到天亮。</p>
+    		<p>我们成了无话不谈的“同伙”，</p>
+    		<p>在和我们共同的朋友玩闹时你永远站在我这一边。</p>
+    	</div>
+    	
+
+    </section>
+
+    <div class="img-holder" data-image="img/2.jpg" data-cover-ratio="0.75" data-width="640" data-height="853"></div>
+    
+    <section style="background:#EB4A5F;"> 
+    	<div class="section_head">
+    		<header class="htmleaf-header">
+				<h1>相恋<span>Fell in love</span></h1>	
+			</header>
+    	</div>
+    	<div class="section_body">
+    		<p>那年我们17岁，</p>
+    		<p>没有追求，</p>
+    		<p>没有告白，</p>
+    		<p>只是顺其自然。</p>
+    		<p>时常为此感到遗憾，</p>
+    		<p>但更多的是觉得，</p>
+    		<p>这大概就是命中注定。</p>
+    		<p class="timespan"></p>
+    	</div>
+    </section>
+
+    <div class="img-holder" data-image="img/3.jpg" data-cover-ratio="0.75" data-width="1350" data-height="1800"></div>
+    
+    <section style="background:#76E2F4"> 
+    	<div class="section_head">
+    		<header class="htmleaf-header">
+				<h1>异地<span>Long-distance relationship</span></h1>	
+			</header>
+    	</div>
+    	<div class="section_body">
+    		<p>10/09/2014，</p>
+    		<p>我踏上了到沈阳的飞机，</p>
+    		<p>开始了大学生活，</p>
+    		<p>也开始了1187公里的异地恋。</p>
+    		<p>异地恋是幸运的，因为每次的相逢都如同初恋；</p>
+    		<p>异地恋更是痛苦的，因为每一次离去都如同失恋。</p>
+    		<p>但，我们坚持下来了。</p>
+
+    	</div>
+    </section>
+
+    <div class="img-holder" data-image="img/4.jpg" data-cover-ratio="0.75" data-width="960" data-height="1280"></div>
+    
+    <section style="background:#99F0CA;"> 
+    	<div class="section_head">
+    		<header class="htmleaf-header">
+				<h1>今天<span>Happy Birthday</span></h1>	
+			</header>
+    	</div>
+    	<div class="section_body">
+    		<p>每次你过生日我都会说：</p>
+    		<p>陪你过的第n个生日，生日快乐。</p>
+    		<p>每次祝福的时候心里都会想着，</p>
+    		<p>以后会有第五个、第十个，</p>
+    		<p>永远……</p>
+    		<p>那，今天</p>
+    		<p>陪你过的第五个生日，生日快乐。</p>
+
+    	</div>
+    </section>
+
+    <div class="img-holder" data-image="img/5.jpg" data-cover-ratio="0.75" data-width="960" data-height="1280"></div>
+    
+    <section style="background:#FDAED8;"> 
+    	<div class="section_head">
+    		<header class="htmleaf-header">
+				<h1>明天<span>To forever</span></h1>	
+			</header>
+    	</div>
+    	<div class="section_body">
+    		<p>你是一个很敏感的女孩，</p>
+    		<p>没有安全感。</p>
+    		<p>但，我要说</p>
+    		<p>我永远不会背叛那个在我一无所有时依然陪伴在我身边的女人。</p>
+    		<p>我会努力，</p>
+    		<p>赚钱养家，</p>
+    		<p>我们所向往的生活，不会太远。</p>
+    		<p>而你，要永远做我身后的女人，</p>
+    		<p>要貌美如花，</p>
+    		<p>要随便花。</p>
+    	</div>
+    </section>
+		
+	<script src="js/jquery.imageScroll.js"></script>
+	    <script>
+	        $('.img-holder').imageScroll({
+	//            image: null,
+	//            imageAttribute: 'image',
+	//            container: $('body'),
+	//            windowObject: $(window),
+	//            speed:.2,
+	//            coverRatio:.75,
+	//            coverRatio:1,
+	//            holderClass: 'imageHolder',
+	//            imgClass: 'img-holder-img',
+	//            holderMinHeight: 200,
+	//            holderMaxHeight: null,
+	//            extraHeight: 50,
+	//            mediaWidth: 1600,
+	//            mediaHeight: 900,
+	//            parallax: true,
+	//            touch: false
+	        });
+	    </script>
+</body>
+</html>
